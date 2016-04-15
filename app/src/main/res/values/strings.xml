@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bjos_bici_beta</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarme">Registrarme</string>
+</resources>

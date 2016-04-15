@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.julian.bjos_bici_beta.MainActivity"
+    android:weightSum="1"
+    android:clickable="false">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUsuario"
+        android:hint="@string/usuario"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="101dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editContraseña"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editUsuario"
+        android:layout_alignLeft="@+id/editUsuario"
+        android:layout_alignStart="@+id/editUsuario"
+        android:layout_alignRight="@+id/editUsuario"
+        android:layout_alignEnd="@+id/editUsuario" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar"
+        android:id="@+id/buttonIngresar"
+        android:layout_alignLeft="@+id/editContraseña"
+        android:layout_alignStart="@+id/editContraseña"
+        android:layout_below="@+id/editContraseña"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:allowUndo="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarme"
+        android:id="@+id/buttonRegistrar"
+        android:layout_alignTop="@+id/buttonIngresar"
+        android:layout_toEndOf="@+id/buttonIngresar"
+        android:allowUndo="false"
+        android:clickable="false" />
+</RelativeLayout>
